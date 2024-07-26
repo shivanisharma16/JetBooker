@@ -1,0 +1,464 @@
+* {
+  
+  font-family: 'poppins', sans-serif;
+  
+}
+body{
+    background-color:#007399;
+    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(backimage.jpg);
+
+  margin: 0;
+}
+
+
+.topnav{
+  background-color:#222;
+  overflow: hidden;
+  box-shadow: #000;
+  
+  
+}
+
+.topnav a{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+} 
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.topnav a.active{
+  background-color: #ff1500;
+  color: #f2f2f2;
+}
+
+.topnav .icon{
+  display: none;
+}
+
+@media screen and (max-width: 600px)
+{
+  .topnav a:not(:first-child){
+    display: none;
+  }
+  .topnav a.icon{
+    float: right;
+    display: block;
+    color: #ddd;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color:#04AA6D ;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absoute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.title{
+    width: 90%;
+    color: #fff;
+    position: relative;
+    text-align: left;
+    top:70px;
+    left:5%; 
+  }
+  
+  .title h1{
+    font-size: 50px;
+    font-family: Lucida Bright;
+    color:white;
+  }
+  
+  .title h2{
+    font-family: Lucida Fax;
+    font-size: 40px;
+    color: #95ff00;
+  }
+  
+  .main-button{
+    position: relative;
+    top: 70px;
+    margin-top:20px;
+    margin-left: 70px;
+    text-decoration: none;
+  }
+  
+  #contact-btn{
+    display: inline-block;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    cursor: pointer;
+    padding: 12px 30px;
+    background-color: #ff1500;
+    border-radius:30px;
+  }
+  
+  #about-btn{
+    color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    padding: 12px 30px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    border-radius:30px;
+    
+  }
+    
+  .searchbox{
+          width: 80%;
+          margin-bottom: 5px;
+          top: 50px;
+          left: 10%;
+          right: 10%;
+          padding-bottom: 30px;
+          bottom: 0;
+          align-items: center;
+          background:#222;
+          display: flex;
+          position: relative;
+          justify-content: center;
+          border:2px solid #4d4d4d;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+          border-radius:10px;
+          
+        }
+        
+        @media screen and (max-width: 600px){
+          .searchbox{
+            margin-bottom: 5px;
+          top: -20px;
+          left: 10%;
+          right: 10%;
+          padding-bottom: 50px;
+          padding-left: 15px;
+            max-width: 300px;
+            position: relative;
+            justify-content: center;
+
+          }
+          .main-button{
+            position: relative;
+            top: 550px;
+            margin-top:20px;
+            margin-left: 70px;
+            text-decoration: none;
+          }
+          
+          .title{
+            width: 90%;
+            color: #fff;
+            position: relative;
+            text-align: left;
+            top:20px;
+            left:5%; 
+          }
+          
+
+}
+
+     
+     .searchbox .inputBox{
+          margin: 0 15px;
+  }
+      
+      .searchbox .inputBox p{
+          color:rgb(255, 255, 255);
+          margin-bottom: 8px;
+      }
+     
+     input{
+        vertical-align: middle;
+        
+          outline: none;
+          padding:9px;
+          
+          width: 90%;
+          font-size: 1.1em;
+          border:2px solid #4d4d4d;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+          outline:none;
+          color: rgb(118, 116, 116);
+          background: transparent;
+          border-radius:20px;
+          overflow: hidden;
+      }
+      
+   select{
+      vertical-align: middle;
+        
+          outline: none;
+          padding:9px;
+          max-width: 100%;
+          min-width: 20px;
+          width: auto;
+          font-size: 1.1em;
+          border:2px solid #4d4d4d;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+          outline:none;
+          color: rgb(118, 116, 116);
+          background: transparent;
+          border-radius:20px;
+          overflow: hidden;
+    }
+      .searchbox .inputBox .date{
+      
+        width: 100px;
+        background: transparent;
+        
+    }
+    .searchbox .inputBox .pass{
+        width: 70px;
+        background: transparent;
+        
+    }
+
+      .searchbox .inputBox input[type="submit"]
+      {
+      width:100%;
+        margin-bottom: -25px;
+        left: 0px;
+          outline:none;
+          border: none;
+          background: #ff1500;
+          color:white;
+          cursor: pointer;
+          letter-spacing: 2px;
+          padding: 10px;
+  }
+  @media (max-width: 1000px) {
+    .searchbox {
+      margin: 10px 0;
+    }
+  
+    .searchbox {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  /* Search result list css*/
+  
+  .cbody h2, .tbody, .ubody h2{
+    color: antiquewhite;
+   
+    text-align: center;
+}
+  .cbody h3, .tbody, .ubody h3{
+    color: orange;
+   
+    text-align: center;
+}
+ .cbody h4, .tbody, .ubody h4{
+    color: antiquewhite;
+   
+    text-align: center;
+}
+    .cbody{
+    margin-top: 90px;
+    align-items: center;
+   color: #ff1500;
+   background-color: #222;
+   width: 60%;
+   height: auto;
+   padding: 30px;
+   padding:10px 0px 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+  border:2px solid #4d4d4d;
+  
+  
+       }
+  
+  box{
+    font-size: 120%;
+    color: whitesmoke;
+    display: flex;
+    width: 90%;
+    height: 70px;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#222;
+    border: 1px solid #4d4d4d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    
+    
+    
+}
+.cbody form,.tbody form, .ubody form{
+
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom:auto ;
+    justify-content: space-between;
+    max-width: 100%;
+}
+ .element{
+    margin-left: 3%;
+    margin-right: 3%;
+    
+ }
+
+button{
+    width: 100px;
+    height:35px;
+    background-color: #ff1500;
+    color: aliceblue;
+    border: 1px solid #ff1500;
+    border-radius: 20px;
+    margin-right: 20px;
+    
+}
+.tagline{
+	text-align:center;
+	color: #4d4d4d;
+	margin-left: 8%;
+    margin-right: 8%;
+    display:flex;
+    margin-top:10px;
+    margin-bottom:6px;
+}
+
+
+/* passbox where travler details get cillected travler.jsp*/
+.passbox{
+  color: #ded4d4;
+  text-align: center;
+  border-radius: 20px;
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222;
+  padding: 30px;
+  border:2px solid #4d4d4d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+}
+.passbox h2{
+  margin-top: -12px;
+}
+.passbox .inputBox{
+  display:flex;
+  margin-top: 20px;
+  
+}
+.passbox select{
+  width:50%;
+  margin-left: 10px;
+}
+.box form{
+  display: block;
+}
+.passbox button{
+        width:30%;
+        margin-top: 25px;
+        left: 0px;
+          outline:none;
+          border: none;
+          background: #ff1500;
+          color:white;
+          cursor: pointer;
+          letter-spacing: 2px;
+          padding: 10px;
+}
+
+/* Message Box*/
+.Message-box{
+    width:auto;
+    min-width: 300px;
+    background-color:#222;
+    
+    top:300px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    height: auto;
+    color: azure;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.Message-box h3{
+    font-size:large;
+    color: #b6f2c2;  
+
+}
+.Message-box h4{
+    font-size:large;
+    color: #f28353;  
+
+}
+
+.Message-box a{
+  margin: 20px;
+  color: #689cca;
+}
+
+ .tbody{
+    margin-top: 90px;
+    align-items: center;
+   color: #fff;
+   background-color: #222;
+   width: 70%;
+   height: auto;
+   padding: 30px;
+   padding:10px 0px 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+  border:2px solid #4d4d4d;
+  
+  
+       }
+       .tbody box{
+       margin-top: 20px;
+       }
+       
+  /* userList */
+  .ubody{
+    margin-top: 100px;
+    align-items: center;
+   color: #ff1500;
+   background-color: #222;
+   width: 90%;
+   height: 100%;
+   padding: 30px;
+   padding:10px 0px 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+  border:2px solid #4d4d4d;
+  
+  
+       }
